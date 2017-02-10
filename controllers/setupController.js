@@ -1,31 +1,31 @@
-var Todos = require('../models/todoModel');
+var Tasks = require('../models/taskModels');
 
 module.exports = function(app) {
     
    app.get('/api/setupTodos', function(req, res) {
        
-       // seed database
+       // initial data
        var starterTodos = [
            {
                username: 'test',
-               todo: 'Buy milk',
+               todo: 'first task',
                isDone: false,
                hasAttachment: false
            },
            {
                username: 'test',
-               todo: 'Feed dog',
+               todo: 'second task',
                isDone: false,
                hasAttachment: false
            },
            {
                username: 'test',
-               todo: 'Learn Node',
+               todo: 'third task',
                isDone: false,
                hasAttachment: false
            }
        ];
-       Todos.create(starterTodos, function(err, results) {
+       Tasks.create(starterTodos, function(err, results) {
            res.send(results);
        }); 
    });
