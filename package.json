@@ -1,17 +1,25 @@
 {
-  "name": "mongo-express-angular-node",
+  "name": "mongo-node-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svshinde83/MongoExpressAngularNode.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svshinde83/MongoExpressAngularNode/issues"
+  },
+  "homepage": "https://github.com/svshinde83/MongoExpressAngularNode#readme",
   "devDependencies": {
-    "body-parser": "^1.16.0",
+    "body-parser": "^1.16.1",
     "ejs": "^2.5.5",
     "express": "^4.14.1",
-    "mongoose": "^4.8.1"
+    "mongoose": "^4.8.2"
   }
 }
